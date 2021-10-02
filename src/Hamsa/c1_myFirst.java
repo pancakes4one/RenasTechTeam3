@@ -1,2 +1,4 @@
-package Hamsa;public class c1_myFirst {
+package Hamsa;
+
+public class c1_myFirst {
 }
