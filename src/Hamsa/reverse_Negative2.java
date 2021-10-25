@@ -2,7 +2,7 @@ package Hamsa;
 
 import java.util.Scanner;
 
-public class revese_Negative2 {
+public class reverse_Negative2 {
 
     public static void main(String[] args) {
 
