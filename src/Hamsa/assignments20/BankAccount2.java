@@ -1,6 +1,6 @@
 package Hamsa.assignments20;
 
-import MyUtil.Lines;
+
 
 public class BankAccount2 {
     static String accountHolder;
@@ -10,11 +10,10 @@ public class BankAccount2 {
     public static void main(String[] args) {
         BankAccount2 account=new BankAccount2("hamsa elyas",652452,2000.00);
         account.showBalance();
-        Lines.Shape1();
+        System.out.println("------------------------------------------");
         account.deposit(500.00);
         account.showBalance();
-        Lines.Shape1();
-
+        System.out.println("------------------------------------------");
     }
 
     public void deposit(Double amount) {
