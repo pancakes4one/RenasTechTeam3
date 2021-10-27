@@ -2,9 +2,8 @@ package Jessicca.presentations;
 
 import sharedUtilFolder.util;
 
-public class nestForLoopPresentation_Oct7 {
-
-    // for loop uses:
+public class nestedForLoopPresentation {
+    // for loop:
     // 1. repeat code like a string
     // 2. repeat code using a special variable "i"
     // 3. using i to access element from an array or ArrayList
@@ -36,9 +35,9 @@ public class nestForLoopPresentation_Oct7 {
                 //     [0][0]    0,1    0,2
                 {"purple", "pink", "orange"}};
 
-        for (int row = 0; row < colors.length; row++) {
-            for (int colums = 0; colums < 3; colums++) {
-                System.out.println(colors[row][colums] + ", ");
+        for (int row = 0; row < colors.length; row++){
+            for (int colums =0; colums < 3; colums++){
+                System.out.println(colors[row][colums]+ ", ");
             }
 
         }
@@ -61,15 +60,15 @@ public class nestForLoopPresentation_Oct7 {
 //        Scanner s = new Scanner(System.in);
 //        int numStars = s.nextInt();
 
-        for (int i = 1; i <= 5; i++) {
-            for (int j = 0; j < i; j++) {
+        for (int i=1; i<=5; i++){
+            for (int j=0; j<i; j++){
                 System.out.print(" * ");
             }
             System.out.println();
         }
 
-        for (int i = 4; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
+        for (int i=4; i>0; i--){
+            for (int j=0; j<i; j++){
                 //i=4 ; j=0,1,2,3
                 //i=3 ; j=0,1,2
                 //i=2 ; j=0,1
@@ -87,22 +86,24 @@ public class nestForLoopPresentation_Oct7 {
         util.brkLn();
 
 
-        char[] removeDup = "AAABBBCC".toCharArray();
+        char [] removeDup ="AAABBBCC".toCharArray();
 
-        for (int i = 0; i < removeDup.length; i++) {
+        for (int i=0; i<removeDup.length; i++){
             int j;
-            for (j = 0; j < 1; j++) {  // or for(j=0; j<removeDup.length; j++){
-
-                // i=0 ; j=0;
-                // i=2 ; j=0,1
+            for(j=0; j<1; j++){  // or for(j=0; j<removeDup.length; j++){
 
 
-                if (removeDup[i] == removeDup[j]) {
+                // i=0  //0 AA YES
+                // i=1  //0 1  AA AA
+                // i=2  //0 1 2
+
+
+                if (removeDup[i]==removeDup[j]){
                     break;
                 }
             }
-            if (i == j) {
-                System.out.println(removeDup[i] + " ");
+            if (i==j){
+                System.out.println(removeDup[i]+" ");
             }
         }
     }
