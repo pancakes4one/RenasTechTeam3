@@ -1,4 +1,4 @@
-package Jessicca.homework.Book;
+package Jessicca.javaHomework.Book;
 
 public class Book {
 
