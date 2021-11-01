@@ -1,4 +1,4 @@
-package Jessicca.homework.SDET;
+package Jessicca.javaHomework.SDET;
 
 public class SDET {
 
